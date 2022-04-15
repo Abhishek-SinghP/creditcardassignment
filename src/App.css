@@ -1,0 +1,88 @@
+
+.App {
+  text-align: center;
+  background: radial-gradient(circle, rgba(63,250,251,1) 57%, rgba(137,70,252,1) 91%);
+}
+
+form label {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 25px;
+}
+
+form {
+  margin: 50px;
+}
+
+form input {
+  border: gray solid 1px;
+  outline: none;
+  padding: 3px 5px;
+  margin: 5px;
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+input:active {
+  border: #61dafb 1px solid;
+}
+
+form input:focus {
+  border: #61dafb 1px solid;
+  box-shadow: 0px 5px 5px rgb(201, 191, 191);
+}
+
+.cardNum {
+  width: 450px;
+  border: solid 2px silver;
+  box-shadow: 1px 1px 2px;
+  padding: 5px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: aquamarine;
+}
+
+.cardOutput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border: 2px solid blue;
+  box-shadow: 1px 1px 2px;
+  margin: 10px;
+}
+
+span {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+span:hover {
+  color: red;
+  font-size: 21px;
+}
+
+.cardBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: center;
+}
+  form input {
+    width: 55px;
+    height: 25px;
+  }
+
+
+@media screen and (min-width: 300px) and (max-width: 780px) {
+  form {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+} 
